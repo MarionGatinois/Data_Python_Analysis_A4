@@ -2,7 +2,9 @@
 
 TO DO : 
 
-To use the projet, you have to downoad the dataset. It’s on the folder on github. 
+To use the projet, you have to downoad the dataset. It’s on the folder on github.
+Then, save it in the same folder as API/jupyter/Template.
+
 
 ______________________ 
 
