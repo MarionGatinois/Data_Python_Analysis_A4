@@ -1,10 +1,15 @@
 # Data_Python_Analysis_A4
 
+INFORMATION : 
+
+This project was done by Marion GATINOIS and Katell GOURLET from DIA 1.
+
+______________________
+
 TO DO : 
 
 To use the projet, you have to downoad the dataset. It’s on the folder on github.
 Then, save it in the same folder as API/jupyter/Template.
-
 
 ______________________ 
 
