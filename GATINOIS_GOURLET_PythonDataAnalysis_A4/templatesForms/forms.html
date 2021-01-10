@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %} 
+
+{% block page %}
+
+<h4> 
+    On this page, you are able to test your futur articles's popularity ! 
+    It is a very serious test with very realable result !
+    It could be about a past or a futur publication of an article but chose only one article to answer the following question !
+</h4>
+
+</br>
+
+<h5> 
+    Please follow the following fields :
+</h5>
+</br>
+
+<form id="form" action="{{ url_for('results') }}" method="POST">
+
+    <div class="form-group">
+        <label for="name">Name of the author</label>
+        <input name="name" type="string" class="form-control" id="name" placeholder="Enter your name">
+    </div>
+
+    
+    <div class="form-group">
+        <label for="n_tokens_title">Number of tokens title (1-30) :</label>
+        <input name="n_tokens_title" type="number" class="form-control" id="n_tokens_title" placeholder="Enter your number of tokens title"
+        min="1" max="30">
+    </div>
+    
+    <div class="form-group">
+        <label for="n_tokens_content">Number of tokens content (1-8500) :</label>
+        <input name="n_tokens_content" type="number" class="form-control" id="n_tokens_content" placeholder="Enter your number of tokens title"
+        min="1" max="8500">
+    </div>
+    
+    
+    <div class="form-group">
+        <label for="num_imgs">Number of images (0-130) :</label>
+        <input name="num_imgs" type="number" class="form-control" id="num_imgs" placeholder="Enter the number of images presents in the article"
+        min="0" max="130">
+    </div>
+    
+    
+    
+
+    
+    <div class="form-group">
+        <label for="weekday">Day of past/futur publication : </label>
+        <select name="weekday" class="form-control">
+          <option>monday</option>
+          <option>tuesday</option>
+          <option>wednesday</option>
+          <option>thursday</option>
+          <option>friday</option>
+          <option>saturday</option>
+          <option>sunday</option>
+        </select>
+    </div>
+
+
+    <div class="form-check">
+        <label class="form-check-label">
+        <input name="data_channel" type="radio" class="form-check-input" value="option1" checked>
+        The data channel that has been used/will be used is lifestyle
+         </label>
+    </div>
+
+    <div class="form-check">
+        <label class="form-check-label">
+        <input name="data_channel" type="radio" class="form-check-input" value="option2">
+        The data channel that has been used/will be used is entertainment
+         </label>
+     </div>
+     
+     <div class="form-check">
+         <label class="data_channel_is_bus">
+        <input name="data_channel" type="radio" class="form-check-input" value="option3" >
+        The data channel that has been used/will be used is bus
+         </label>
+     </div>
+     
+     <div class="form-check">
+        <label class="form-check-label">
+        <input name="data_channel" type="radio" class="form-check-input" value="option4">
+        The data channel that has been used/will be used is socmed
+         </label>
+    </div>
+
+    <div class="form-check">
+        <label class="form-check-label">
+        <input name="data_channel" type="radio" class="form-check-input" value="option5">
+        The data channel that has been used/will be used is tech
+         </label>
+    </div>
+    
+    <div class="form-check">
+        <label class="form-check-label">
+        <input name="data_channel" type="radio" class="form-check-input" value="option6">
+        The data channel that has been used/will be used is world
+         </label>
+    </div>
+
+
+
+
+    <button type="submit" class="btn btn-secondary">Submit</button>
+
+    </br>
+    </br>
+
+</form>
+
+
+ {% endblock %}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
